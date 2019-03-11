@@ -1,0 +1,42 @@
+<Html lang="pt-BR">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <link href="tarefas.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+        <title>Lista de tarefas</title>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <script src="tarefas.js"></script>
+    </head>
+
+    <body onload="aoCarregar()">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 data">
+                        <span id="data-hoje"> Data:____/____/____</span>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class=faixa>
+                            <i class=" grande fas fa-bullhorn">
+                                <span class="tarefa"> Tarefas</span>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="item">
+                    <div class="col-md-12 ">    
+                        <input type="checkbox" class="botao marcador"> 
+                        <input type="text" name="atividade"  size="110" maxlength="1000" required autofocus placeholder="Insira a atividade">
+                        <input type="submit" value=" + " id="+" name="+" class="botao" onclick="adicionar()">
+                    </div>
+                </div>
+            </div>
+    </body>        
+</Html>
